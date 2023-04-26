@@ -15,7 +15,7 @@ import router from './router'
 
 Vue.use(VeeValidate)
 
-// eslint-disable-next-line
+// eslint-disable-next line here
 new Vue({
   el: '#app',
   store,
