@@ -1,5 +1,5 @@
 /**
- * Sample secret config file
+ * Sample secret configuration file
  */
 module.exports = {
   db: {
