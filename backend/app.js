@@ -8,12 +8,12 @@ const routes = require('./routes/index')
 const app = express()
 const { models, sequelize } = require('./db/index')
 
-// Setup DB and store models in app
+// Setup Database and store models in app
 app.set('db', models)
 app.set('sequelize', sequelize)
 app.set('case sensitive routing', true)
 
-// some middlewares
+// some middlewares here
 if (app.get('env') === 'development') {
   app.use(logger('dev'))
 }
