@@ -49,11 +49,11 @@ fs.readdirSync(directory).forEach(file => {
 // Setup model associations
 associations.associate(models)
 
-// Test connection
+// Test connection here
 sequelize
   .authenticate()
   .then(() => {
-    // Sync DB schema
+    // Sync Database schema
     sequelize
       .sync({
         logging: false
