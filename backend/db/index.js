@@ -46,7 +46,7 @@ fs.readdirSync(directory).forEach(file => {
   models[name] = sequelize.import(directory + file)
 })
 
-// Setup model associations
+// Setup model associations here
 associations.associate(models)
 
 // Test connection here
