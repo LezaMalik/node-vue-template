@@ -40,7 +40,7 @@ const sequelize = new Sequelize(
   }
 )
 
-// Import models
+// Import models here
 fs.readdirSync(directory).forEach(file => {
   const name = file.replace('.js', '')
   models[name] = sequelize.import(directory + file)
