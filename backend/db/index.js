@@ -10,7 +10,7 @@ const directory = path.join(__dirname, '/models/')
 
 const models = {}
 
-// Setup sequelize
+// Setup sequelize here
 const sequelize = new Sequelize(
   config.get('options.db.name'),
   config.get('options.db.username'),
